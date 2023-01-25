@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+  }
+
+.left {
+    width: 15%;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.center {
+    width: 70%;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.right {
+    width: 15%;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background-image: url(https://media.tenor.com/baTfy6sflvAAAAAd/equalizer-music.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+}
+
+.banner {
+    background-color: slategrey;
+    
+}
+
+#spin {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
