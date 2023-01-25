@@ -37,14 +37,30 @@ body {
     to {transform: rotate(360deg);}
 }
 
+@keyframes growtext {
+    from {font-size: 10px;}
+    to {font-size: 30px;}
+}
+
+@keyframes drop {
+    from {top: -100vh;}
+    to {top: 100vh}
+}
+
 h1 {
     color: azure;
     text-align: center;
 }
 
 .banner {
-    background-color: slategrey;
-    
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fsf970VLyRbZte%2Fgiphy.gif&f=1&nofb=1&ipt=e2e821773dccaa21b92c64ade63c5c6dc3d15918719710ab84457baecec6a219&ipo=images);
+    font-family: 'Creepster', cursive;
+    height: 140px;
+    text-shadow: 5px 5px 15px red;
+    animation-name: growtext;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #spin {
@@ -57,4 +73,23 @@ h1 {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.left .side {
+    position: relative;
+    width: 80%;
+    animation-name: drop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.right .side {
+    position: relative;
+    width: 80%;
+    animation-name: drop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
 }
