@@ -1,3 +1,18 @@
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes growtext {
+    from {font-size: 10px;}
+    to {font-size: 30px;}
+}
+
+@keyframes drop {
+    from {top: -100vh;}
+    to {top: 100vh}
+}
+
 * {
     box-sizing: border-box;
   }
@@ -32,20 +47,7 @@ body {
     background-size: cover;
 }
 
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
 
-@keyframes growtext {
-    from {font-size: 10px;}
-    to {font-size: 30px;}
-}
-
-@keyframes drop {
-    from {top: -100vh;}
-    to {top: 100vh}
-}
 
 h1 {
     color: azure;
