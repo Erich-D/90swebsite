@@ -13,6 +13,11 @@
     to {top: 100vh}
 }
 
+@keyframes grow {
+    from {width: 25px;}
+    to {width: 398px;}
+}
+
 * {
     box-sizing: border-box;
   }
@@ -94,4 +99,15 @@ h1 {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: reverse;
+}
+
+.topcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    animation-name: grow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
